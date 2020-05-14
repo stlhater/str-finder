@@ -22,9 +22,9 @@ int find_str_entry(std::string in, std::string str) {
 
 int main() {
 	setlocale(LC_ALL, "RUS");
-	std::string in = "Гуси по небу летели";
+	std::string in = "Hello world";
 	std::cout << "base string: " << in << std::endl;
-	std::cout << "entry of 'небу': " << find_str_entry(in, "небу") << std::endl;
-	std::cout << "entry of 'андрей': " << find_str_entry(in, "андрей") << std::endl;
+	std::cout << "entry of 'небу': " << find_str_entry(in, "world") << std::endl;
+	std::cout << "entry of 'андрей': " << find_str_entry(in, "not exist") << std::endl;
 	std::cin.get();
 }
